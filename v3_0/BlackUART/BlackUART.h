@@ -59,24 +59,28 @@ namespace BlackLib
 
 
     /*!
-    * This enum is used for setting baud rate.
+    * This enum is used for setting baud rate. Values are termios macros. 
+	* Modified for portability/more speeds on 21Feb2016 -- Pierce Nichols
     */
-    enum baudRate           {   Baud0                   = 0,
-                                Baud50                  = 1,
-                                Baud75                  = 2,
-                                Baud110                 = 3,
-                                Baud134                 = 4,
-                                Baud150                 = 5,
-                                Baud200                 = 6,
-                                Baud300                 = 7,
-                                Baud600                 = 8,
-                                Baud1200                = 9,
-                                Baud1800                = 10,
-                                Baud2400                = 11,
-                                Baud4800                = 12,
-                                Baud9600                = 13,
-                                Baud19200               = 14,
-                                Baud38400               = 15
+    enum baudRate           {   Baud0                   = B0,
+                                Baud50                  = B50,
+                                Baud75                  = B75,
+                                Baud110                 = B110,
+                                Baud134                 = B134,
+                                Baud150                 = B150,
+                                Baud200                 = B200,
+                                Baud300                 = B300,
+                                Baud600                 = B600,
+                                Baud1200                = B1200,
+                                Baud1800                = B1800,
+                                Baud2400                = B2400,
+                                Baud4800                = B4800,
+                                Baud9600                = B9600,
+                                Baud19200               = B19200,
+                                Baud38400               = B38400,
+								Baud57600				= B57600,
+								Baud115200				= B115200,
+								Baud230400				= B230400
                             };
 
 
